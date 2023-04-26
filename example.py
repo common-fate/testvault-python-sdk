@@ -1,6 +1,6 @@
-from testvault.client import Client
+import testvault
 
-c = Client(team_name="common-fate-test")
+client = testvault.Client(team_name="common-fate-test")
 
-c.add_member_to_vault("prod-secrets-vault", "chris@commonfate.io")
-c.remove_member_from_vault("prod-secrets-vault", "chris@commonfate.io")
+client.add_member_to_vault("prod-secrets-vault", "chris@commonfate.io")
+client.remove_member_from_vault("prod-secrets-vault", "chris@commonfate.io")
